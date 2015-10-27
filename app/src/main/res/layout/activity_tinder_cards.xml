@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.example.root.tindersampleapp.modules.tinderHome.controller.SwipeCardsAdapterView
+            android:id="@+id/cards_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            app:rotation_degrees="15.5" />
+
+        <ImageView
+            android:id="@+id/iv_cards_activity_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh_icon"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>
